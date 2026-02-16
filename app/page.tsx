@@ -1,9 +1,13 @@
+import Image from "next/image";
+import logo from "./assets/logo_transparent_with_motto.png"
+
 export default function Home() {
   return (
     <main className="flex flex-col">
 
       {/* HERO */}
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-blackPrimary">
+        <Image  src={logo} alt="master flow solutions LOGO" width={400} height={200}/>
         <h1 className="font-heading text-4xl md:text-6xl font-bold text-gold mb-6">
           Professional Plumbing & Home Solutions
         </h1>
