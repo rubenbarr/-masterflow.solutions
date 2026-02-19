@@ -98,5 +98,5 @@ body {
     #000000
   );
   background-size: 300% 300%;
-  animation: backgroundAnimationHero 12s ease infinite;
+  animation: backgroundAnimationHero 5s ease infinite;
 }
