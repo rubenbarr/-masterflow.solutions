@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "./assets/logo_transparent_without_motto1.png";
+import logo from "./assets/master-flow-Photoroom.png";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
           className="mb-8"
         />
 
-        <h1 className="font-heading text-4xl md:text-6xl font-bold text-gold mb-6">
+        <h1 className="font-heading  md:text-6xl font-bold text-gold mb-6 font-heading text-4xl bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent">
           MasterFlow Solutions LLC — Whole Home Solutions You Can Trust
         </h1>
 
@@ -44,8 +44,8 @@ export default function Home() {
       </section>
 
       {/* ================= INTRO ================= */}
-      <section className="py-20 px-6 bg-black text-gray-300 text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-8">
+      <section className="py-20 px-6 bg-black text-gold text-center">
+        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-8 bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent">
           Small Town Values. High-End Standards.
         </h2>
 
@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* ================= CORE VALUES ================= */}
       <section className="py-20 px-6 bg-blackPrimary text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-12">
+        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-12 bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent" >
           What We Stand For
         </h2>
 
@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* ================= WHY CHOOSE US ================= */}
       <section className="py-20 px-6 bg-black text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-10">
+        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-10 bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent">
           Why Homeowners Choose MasterFlow Solutions
         </h2>
 
@@ -116,7 +116,7 @@ export default function Home() {
 
       {/* ================= MISSION ================= */}
       <section className="py-20 px-6 bg-blackPrimary text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-6">
+        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-6 bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent">
           Our Mission
         </h2>
 
@@ -129,7 +129,7 @@ export default function Home() {
 
       {/* ================= CONTACT ================= */}
       <section id="contact" className="py-20 px-6 bg-gold text-blackPrimary text-center">
-        <h2 className="font-heading text-3xl md:text-4xl mb-6">
+        <h2 className="font-heading text-3xl md:text-4xl mb-6 text-[#d4b426]">
           Contact MasterFlow Solutions LLC
         </h2>
 

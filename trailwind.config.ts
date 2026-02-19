@@ -9,9 +9,9 @@ const config: Config = {
     extend: {
       colors: {
         blackPrimary: "#0B0B0B",
-        gold: "#D4AF37",
-        goldDark: "#B8962E",
-        goldLight: "#F5E6B3",
+        goldPrimary: "#d4b426",
+        goldHover: "#e6c84f",
+        goldDark: "#b8962e",
       },
       fontFamily: {
         heading: ["var(--font-cinzel)"],
