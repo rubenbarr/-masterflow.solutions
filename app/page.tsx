@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "./assets/master-flow-Photoroom.png";
+import { FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       {/* ================= HERO ================= */}
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 animationHero relative overflow-hidden">
         {/* Gold radial glow overlay */}
-        <div className="absolute inset-0"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,180,38,0.08),transparent_70%)]"></div>
 
         <div className="relative z-10 flex flex-col items-center">
           <Image
@@ -187,7 +188,7 @@ export default function Home() {
       {/* ================= CONTACT ================= */}
       <section
         id="contact"
-        className="py-20 px-6 bg-gold text-blackPrimary text-center"
+        className="bg-gold text-blackPrimary text-center flex flex-col gap-3"
       >
         <h2 className="font-heading text-3xl md:text-4xl mb-6 gold-shimmer">
           Contact MasterFlow Solutions LLC
@@ -200,16 +201,26 @@ export default function Home() {
           </a>
         </p>
 
-        <p className="mb-8 text-lg font-medium">
+        <p className="text-lg font-medium">
           Email:{" "}
           <a href="mailto:info@masterflowsolutions.com" className="underline">
             info@masterflowsolutions.com
           </a>
         </p>
+        <div className="flex flex-col items-center">
+        <a
+          href="https://www.facebook.com/share/1GEy5JzXVt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-12 h-12 rounded-full border border-gold text-gold hover:bg-gold hover:text-blackPrimary transition duration-300 hover:scale-110"
+          >
+          <FaFacebook/>
+        </a>
+          </div>
 
         <a
           href="tel:4233095060"
-          className="bg-blackPrimary text-gold px-8 py-3 rounded font-semibold hover:opacity-90 transition"
+          className="bg-blackPrimary text-gold rounded font-semibold hover:opacity-90 transition"
         >
           Call 24/7 Now
         </a>
