@@ -4,42 +4,45 @@ import logo from "./assets/master-flow-Photoroom.png";
 export default function Home() {
   return (
     <main className="flex flex-col">
-
       {/* ================= HERO ================= */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-blackPrimary">
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 animationHero relative overflow-hidden">
+        {/* Gold radial glow overlay */}
+        <div className="absolute inset-0"></div>
 
-        <Image
-          src={logo}
-          alt="MasterFlow Solutions LLC Logo"
-          width={420}
-          height={220}
-          priority
-          className="mb-8"
-        />
+        <div className="relative z-10 flex flex-col items-center">
+          <Image
+            src={logo}
+            alt="MasterFlow Solutions LLC Logo"
+            width={420}
+            height={220}
+            priority
+            className="mb-8 fade-up"
+          />
 
-        <h1 className="font-heading  md:text-6xl font-bold text-gold mb-6 font-heading text-4xl bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent">
-          MasterFlow Solutions LLC — Whole Home Solutions You Can Trust
-        </h1>
+          <h1 className="md:text-6xl font-bold text-gold mb-6 text-4xl gold-shimmer fade-up delay-1">
+            MasterFlow Solutions LLC — Whole Home Solutions You Can Trust
+          </h1>
 
-        <p className="max-w-3xl text-lg md:text-xl text-gray-300 mb-10">
-          Locally owned and operated, providing high-end home services at
-          community-friendly prices — with 24/7 emergency support.
-        </p>
+          <p className="max-w-3xl text-lg md:text-xl text-gray-300 mb-10 fade-up delay-2">
+            Locally owned and operated, providing high-end home services at
+            community-friendly prices — with 24/7 emergency support.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a
-            href="#contact"
-            className="bg-gold text-blackPrimary px-8 py-3 font-semibold rounded hover:bg-goldDark transition"
-          >
-            Request Service
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 fade-up delay-3">
+            <a
+              href="#contact"
+              className="bg-gold text-blackPrimary px-8 py-3 font-semibold rounded hover:bg-goldDark transition duration-300 hover:scale-105"
+            >
+              Request Service
+            </a>
 
-          <a
-            href="tel:1234567890"
-            className="border border-gold px-8 py-3 rounded text-gold hover:bg-gold hover:text-blackPrimary transition"
-          >
-            Emergency Support
-          </a>
+            <a
+              href="tel:4233095060"
+              className="border border-gold px-8 py-3 rounded text-gold hover:bg-gold hover:text-blackPrimary transition duration-300 hover:scale-105"
+            >
+              Emergency Support
+            </a>
+          </div>
         </div>
       </section>
 
@@ -74,27 +77,32 @@ export default function Home() {
 
       {/* ================= CORE VALUES ================= */}
       <section className="py-20 px-6 bg-blackPrimary text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-12 bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent" >
+        <h2 className="font-heading text-3xl md:text-4xl text-gold mb-12 bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] bg-clip-text text-transparent">
           What We Stand For
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-gray-300">
-
           <div className="border border-gold p-8 rounded-lg">
             <h3 className="text-xl font-semibold text-gold mb-4">Integrity</h3>
-            <p>We communicate honestly and operate with full transparency from start to finish.</p>
+            <p>
+              We communicate honestly and operate with full transparency from
+              start to finish.
+            </p>
           </div>
 
           <div className="border border-gold p-8 rounded-lg">
             <h3 className="text-xl font-semibold text-gold mb-4">Excellence</h3>
-            <p>We deliver premium-level workmanship with attention to detail.</p>
+            <p>
+              We deliver premium-level workmanship with attention to detail.
+            </p>
           </div>
 
           <div className="border border-gold p-8 rounded-lg">
-            <h3 className="text-xl font-semibold text-gold mb-4">Reliability</h3>
+            <h3 className="text-xl font-semibold text-gold mb-4">
+              Reliability
+            </h3>
             <p>When we commit, we follow through — every time.</p>
           </div>
-
         </div>
       </section>
 
@@ -127,24 +135,80 @@ export default function Home() {
         </p>
       </section>
 
+      {/* =================== COMMENTS ======================== */}
+      <section className="relative py-28 px-6 bg-black overflow-hidden">
+        {/* Background subtle gold radial glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,180,38,0.08),transparent_60%)]"></div>
+
+        <div className="relative z-10 text-center">
+          <h2
+            className="font-heading text-3xl md:text-5xl mb-16 
+      bg-gradient-to-r from-[#b8962e] via-[#d4b426] to-[#f5e27a] 
+      bg-clip-text text-transparent fade-up"
+          >
+            Crafted to Impress. Built to Last.
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            {[
+              "The level of craftsmanship was beyond what we expected. Every detail was handled with precision and professionalism. The finished work truly reflects high-end quality.",
+              "When we needed urgent service, they responded immediately. Clean, efficient, and incredibly professional. The results exceeded competitors by far.",
+              "It’s rare to find small-town values combined with luxury-level workmanship. The attention to detail and commitment to excellence truly set them apart.",
+            ].map((review, index) => (
+              <div
+                key={index}
+                className="
+          backdrop-blur-lg
+          bg-white/5
+          border border-[#d4b426]
+          p-10
+          rounded-2xl
+          transition duration-500
+          hover:scale-105
+          hover:shadow-[0_0_40px_rgba(212,180,38,0.5)]
+          gold-glow
+          fade-up
+          "
+              >
+                {/* Gold Stars */}
+                <div className="flex justify-center mb-6 text-[#d4b426] text-xl tracking-widest">
+                  ★★★★★
+                </div>
+
+                <p className="text-gray-300 italic leading-relaxed text-lg">
+                  “{review}”
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ================= CONTACT ================= */}
-      <section id="contact" className="py-20 px-6 bg-gold text-blackPrimary text-center">
-        <h2 className="font-heading text-3xl md:text-4xl mb-6 text-[#d4b426]">
+      <section
+        id="contact"
+        className="py-20 px-6 bg-gold text-blackPrimary text-center"
+      >
+        <h2 className="font-heading text-3xl md:text-4xl mb-6 gold-shimmer">
           Contact MasterFlow Solutions LLC
         </h2>
 
         <p className="mb-4 text-lg font-medium">
-          Phone: <a href="tel:1234567890" className="underline">123-456-7890</a>
+          Phone:{" "}
+          <a href="tel:4233095060" className="underline">
+            423-309-5060
+          </a>
         </p>
 
         <p className="mb-8 text-lg font-medium">
-          Email: <a href="mailto:info@masterflowsolutions.com" className="underline">
+          Email:{" "}
+          <a href="mailto:info@masterflowsolutions.com" className="underline">
             info@masterflowsolutions.com
           </a>
         </p>
 
         <a
-          href="tel:1234567890"
+          href="tel:4233095060"
           className="bg-blackPrimary text-gold px-8 py-3 rounded font-semibold hover:opacity-90 transition"
         >
           Call 24/7 Now
@@ -153,9 +217,9 @@ export default function Home() {
 
       {/* ================= FOOTER ================= */}
       <footer className="bg-blackPrimary text-gray-400 text-center py-6 text-sm">
-        © {new Date().getFullYear()} MasterFlow Solutions LLC. All Rights Reserved.
+        © {new Date().getFullYear()} MasterFlow Solutions LLC. All Rights
+        Reserved.
       </footer>
-
     </main>
   );
 }
